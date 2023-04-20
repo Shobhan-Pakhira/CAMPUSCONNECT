@@ -17,11 +17,11 @@ function About() {
             <RightContainer>
               <h1>About Us</h1>
               <p>
-                Project Name: Club Management Systems
+                Project Name: Campus Connect
                 <br/>
-                Team Members: Hritik Kumar Sharma &amp; Mudit Jain
+                Team Members: Shobhan Pakhira &amp; Shivansh Sharma
                 <br />
-                Final Year Project!
+                Final Year Major Project!
               </p>
             </RightContainer>
           </AboutWrapper>
@@ -29,11 +29,8 @@ function About() {
     </AboutContainer>
   );
 }
-
 export default About;
-
 const AboutContainer = styled.div``;
-
 const AboutWrapper = styled.div`
   display: flex;
   justify-content: space-evenly;

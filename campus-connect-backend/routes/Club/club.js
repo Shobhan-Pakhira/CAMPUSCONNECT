@@ -22,7 +22,7 @@ router.post("/getClubData", (req, res, next) => {
                 email: member.email,
                 clubPosition: member.clubPosition,
                 avatar:
-                  "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWVufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
+                  "https://i.pinimg.com/originals/66/3d/66/663d663eacd4353615af2807675047ee.jpg",
               };
             });
             res.send(result);

@@ -39,13 +39,13 @@ function AdminSidebar() {
           <EventIcon />
           <TabTitle>Events</TabTitle>
         </SidebarTab>
-        <SidebarTab
+        {/* <SidebarTab
           to="/admin/members"
           $isActive={pathname === "/admin/members"}
         >
           <MembersIcon />
           <TabTitle>Members</TabTitle>
-        </SidebarTab>
+        </SidebarTab> */}
         <SidebarTab to="/admin/feeds" $isActive={pathname === "/admin/feeds"}>
           <FeedsIcon />
           <TabTitle>Feeds</TabTitle>

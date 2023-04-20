@@ -27,6 +27,7 @@ function Gallery() {
   }, []);
 
   return (
+    prevEvents.length > 0 ? 
     <GalleryContainer>
       <GalleryHeading>
         <MainHeading>Our Past Events</MainHeading>
@@ -54,8 +55,9 @@ function Gallery() {
           </ImageCardWrapper>
         ))}
       </ImageCards>
-    </GalleryContainer>
+    </GalleryContainer> : <></>
   );
+  
 }
 
 export default Gallery;

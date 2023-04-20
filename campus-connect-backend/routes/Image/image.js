@@ -1,7 +1,6 @@
 var express = require("express");
 var router = express.Router();
 const path = require("path");
-
 const crypto = require("crypto");
 const mongoose = require("mongoose");
 const MongoUrl = require("../../config").MONGODB_URL;

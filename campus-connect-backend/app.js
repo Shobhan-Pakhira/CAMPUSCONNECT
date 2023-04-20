@@ -6,7 +6,6 @@ var logger = require("morgan");
 
 const { GridFsStorage } = require("multer-gridfs-storage");
 
-
 const mongoose = require("mongoose");
 const config = require("./config");
 const MongoDBURL = config.MONGODB_URL;
@@ -19,9 +18,7 @@ const mongoConnect = mongoose.connect(MongoDBURL, {
   useFindAndModify: true,
 });
 
-// // Init gfs
 // let gfs;
-
 mongoConnect.then(
   (db) => {
     console.log("Connected to MongoDB...");
