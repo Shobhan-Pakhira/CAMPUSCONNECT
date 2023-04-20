@@ -211,7 +211,7 @@ function ViewAndEditEvent() {
     <AddEventContainer>
       <EventCard>
         <div className="event_heading">
-          <h1>{eventId ? "Edit" : "Create"} an Event</h1>
+          <h1>{eventId ? "Edit" : "Create"} An Event</h1>
         </div>
         <form method="POST">
           <FormInput

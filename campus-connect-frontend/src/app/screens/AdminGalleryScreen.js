@@ -21,7 +21,7 @@ function AdminGalleryScreen() {
   const clubInfo = useSelector(selectClubInfo);
   const { clubPhotos } = clubInfo;
 
-  const [image, setImage] = useState(null);
+  const [image, setImage] = useState();
 
   const selectImage = (event) => {
     if (event.target.files) {

@@ -3,10 +3,11 @@ import { Link, useLocation } from "react-router-dom";
 import MenuOpenIcon from "@material-ui/icons/MenuOpen";
 import { useDispatch, useSelector } from "react-redux";
 import styled, { css } from "styled-components";
+import Logo from "../assets/images/ait-logo.jpeg";
 
 import { selectUser, signOutAsync } from "../features/authSlice";
 import { eraseClubInfoAndPost } from "../features/clubSlice";
-import {eraseEvents} from "../features/eventsSlice";
+import { eraseEvents } from "../features/eventsSlice";
 
 function Header() {
   const user = useSelector(selectUser);
@@ -40,16 +41,6 @@ function Header() {
     setIsNavOpened((prevState) => !prevState);
   };
 
-  // const headerClasses =
-  //   pathname === "/"
-  //     ? `header ${headerColor && "header__backgroundChange"}`
-  //     : "header header__default";
-
-  // const getLinkClasses = (linkPath) =>
-  //   pathname === linkPath
-  //     ? "header__rightLink header__rightLinkActive"
-  //     : "header__rightLink";
-
   const signOutUser = async () => {
     try {
       await dispatch(eraseClubInfoAndPost());
@@ -71,8 +62,8 @@ function Header() {
       </Burger>
       <HeaderRightLink to="/" $isActive={false}>
         <HeaderLeft>
-          {/* <HeaderLogo src={Logo} alt="bbc" /> */}
-          <HeaderTitle>CMS CTAE</HeaderTitle>
+          <HeaderLogo src={Logo} alt="bbc" />
+          <HeaderTitle>Campus Connect</HeaderTitle>
         </HeaderLeft>
       </HeaderRightLink>
       <HeaderRight $isNavOpened={isNavOpened}>
@@ -108,11 +99,6 @@ function Header() {
             <TabContainer className="register">Sign Up</TabContainer>
           </HeaderRightLink>
         )}
-        {/* {user && user.name && (
-          <HeaderRightLink to="/admin" $isActive={pathname === "/admin"}>
-            <TabContainer>Admin</TabContainer>
-          </HeaderRightLink>
-        )} */}
         {user && user.name ? (
           <HeaderRightTab $isActive={false} onClick={signOutUser}>
             <TabContainer className="login">Log Out</TabContainer>
@@ -182,13 +168,13 @@ const HeaderLeft = styled.div`
   align-items: center;
 `;
 
-// const HeaderLogo = styled.img`
-//   width: 40px;
-//   height: 40px;
-//   background-color: #fff;
-//   object-fit: contain;
-//   border-radius: 20px;
-// `;
+const HeaderLogo = styled.img`
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  object-fit: contain;
+  border-radius: 20px;
+`;
 
 const HeaderTitle = styled.h3`
   margin-left: 20px;

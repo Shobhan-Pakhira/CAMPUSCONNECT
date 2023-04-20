@@ -34,7 +34,7 @@ function Clubs() {
   }, [fetchData]);
   return (
     <ClubsContainer id="clubs">
-      <ClubsHeading>Our College Clubs</ClubsHeading>
+      <ClubsHeading>Our College Student Chapters !</ClubsHeading>
       <ClubsWrapper>
         {clubsData.map(({ clubName, clubLogo }) => (
           <ClubCard key={clubName} to={`/login?clubName=${clubName}`}>

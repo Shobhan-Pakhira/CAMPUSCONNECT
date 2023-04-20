@@ -3,17 +3,16 @@ import styled from "styled-components";
 function EventSchedule() {
   return (
     <EventScheduleContainer id="programSection">
-      <EventScheduleHeading>Programs</EventScheduleHeading>
+      <EventScheduleHeading>Events Aligned</EventScheduleHeading>
       <EventScheduleCard>
         <EventTime>
-          10:00 <TimeTypography>AM</TimeTypography>
+          11:00 <TimeTypography>AM</TimeTypography>
         </EventTime>
         <EventDescription>
           <EventTitle>LinkedIn & Git Workshop</EventTitle>
-          <ClubName>Programming Club</ClubName>
+          <ClubName>Senior's Club</ClubName>
         </EventDescription>
       </EventScheduleCard>
-
     </EventScheduleContainer>
   );
 }

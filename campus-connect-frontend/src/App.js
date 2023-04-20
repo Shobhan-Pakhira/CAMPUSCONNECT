@@ -14,7 +14,6 @@ import AddEvent from "./app/screens/AddEvent";
 import AddFeed from "./app/screens/AddFeed";
 import PrivateRoute from "./app/components/PrivateRoute";
 import ProtectedRoute from "./app/components/ProtectedRoute";
-
 import ClubProfileScreen from "./app/screens/ClubProfileScreen";
 import AdminProfileScreen from "./app/screens/AdminProfileScreen";
 import AdminFeedsScreen from "./app/screens/AdminFeedsScreen";
@@ -87,6 +86,7 @@ function App() {
           <Route path="/">
             <HomeScreen />
           </Route>
+          
         </Switch>
       </AppContainer>
     </Router>

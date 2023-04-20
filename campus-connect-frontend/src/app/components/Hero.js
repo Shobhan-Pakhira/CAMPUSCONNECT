@@ -24,7 +24,7 @@ function Hero() {
   return (
     <HeroContainer>
       <ClubDescription>
-        <Test>Team work is dream work!</Test>
+        <Test>Synergy makes the difference</Test>
         <ButtonsContainer>
           <EventsButton
             onClick={user ? goToEventsHandler : goToEventsHandlerHome}
@@ -49,7 +49,7 @@ const HeroContainer = styled.section`
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.6)
-    url("https://news.itmo.ru/images/news/big/p4835.jpg")
+    url("https://mcmahongroup.com/_site/wp-content/uploads/2020/04/33618388_m-1024x683.jpg")
     center/cover fixed no-repeat;
   background-blend-mode: darken;
 `;

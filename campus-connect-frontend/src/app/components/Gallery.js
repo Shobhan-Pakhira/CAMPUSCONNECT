@@ -29,7 +29,7 @@ function Gallery() {
   return (
     <GalleryContainer>
       <GalleryHeading>
-        <MainHeading>Our Previous Events</MainHeading>
+        <MainHeading>Our Past Events</MainHeading>
       </GalleryHeading>
       <ImageCards>
         {prevEvents.map((event) => (

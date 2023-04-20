@@ -65,7 +65,7 @@ function EventsScreen() {
       {events && events.length ? (
         events.map((event) => <Event key={event.id} eventData={event} />)
       ) : (
-        <h3 style={{ color: "#ffffff" }}>"There is NO Events right now!"</h3>
+        <h3 style={{ color: "#ffffff" }}>"No Events Aligned"</h3>
       )}
     </EventsContainer>
   );

@@ -1,5 +1,5 @@
 {
-  "name": "cms-club",
+  "name": "campus-connect-frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -48,5 +48,5 @@
       "last 1 safari version"
     ]
   },
-  "author": "Hritik Kumar Sharma"
+  "author": "Shobhan Pakhira"
 }
